@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Callbacks</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="fw-bolder pt-4 p-2">EJERCICIOS CALLBACKS / CONSOLA</h1>
+        <section class="text-xl-start pt-4 p-2 fs-5"> 1.- Muestra un mensaje en consola mediante un callback.
+            La función que escribas debe poder mostrar el mensaje como console.warn,
+            console.log, console.info, o cualquier método para pintar en consola del objeto console.
+            <button class="btn btn-primary btn-sm fw-bolder" onclick="ejercicio1()">Ejercicio 1</button>
+        </section>
+
+        <section class="text-xl-start p-2 fs-5"> 2.- Crear una función que reciba como argumento una variable de cualquier tipo y un callback.
+            La función debe retornar como resultado, mediante el callback, cual es el tipo de dato de la variable
+            ingresada e imprimir su contenido. typeof
+            <button class="btn btn-primary btn-sm fw-bolder" onclick="ejercicio2()">Ejercicio 2</button>
+        </section>
+
+        <section class="text-xl-start p-2 fs-5"> 3.- Crear una función que reciba como argumentos, dos números y un callback.
+            Según el callback que se pase a la función, se devuelve la suma de los dos números,
+            la resta de los dos números, la multiplicación de los dos números o división.
+            <button class="btn btn-primary btn-sm fw-bolder" onclick="ejercicio3()">Ejercicio 3</button>
+        </section>
+
+        <section class="text-xl-start p-2 fs-5"> 4.- Escribe una función que reciba una cadena de caracteres y debe devolver, mediante un callback,
+            la cadena de caracteres en mayúsculas o en minúsculas.
+            ordenSuperior("PejeLagarto", minus); -> pejelagarto ordenSuperior("PejeLagarto", mayus); -> PEJELAGARTO
+            <button class="btn btn-primary btn-sm fw-bolder" onclick="ejercicio4()">Ejercicio 4</button>
+        </section>
+
+        <section class="text-xl-start p-2 fs-5"> 5.- Hacer un arreglo de 4 cantidades de tiempo (en minutos) EJEMPLO [120, 80, 200, 100] y
+            tomar solo las cantidades mayores a dos horas (hacer la comparación en horas) regresar el nuevo
+            array mediante un callback.
+            <button class="btn btn-primary btn-sm fw-bolder" onclick="ejercicio5()">Ejercicio 5</button>
+        </section>
+
+        <footer>
+            <p class="text-sm-start p-2 fs-5 font-monospace">Visita mi perfil en <a href="https://github.com/Romi2073">GitHub</a></p>
+        </footer>        
+
+    </div>
+
+    <script src="./ejercicios.js"></script>
+</body>
+
+</html>
